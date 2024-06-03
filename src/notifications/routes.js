@@ -5,7 +5,7 @@ const authenticateToken = require('../../middleware/authenticationToken');
 const router = Router();
 
 router.get('/',authenticateToken,controller.getNotif);
-router.post('/mark-read',authenticateToken,controller.markRead);
+router.post('/mark-read/:id',authenticateToken,controller.markRead);
 
 // router.post("/register",controller.addUsers);
 // router.post("/login",controller.loginUser);

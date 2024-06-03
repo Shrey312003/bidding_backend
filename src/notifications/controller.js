@@ -15,10 +15,10 @@ const getNotif = (req,res) =>{
 }
 
 const markRead = (req,res) =>{  
-    const user_id = req.user.id;
+    const id = parseInt(req.params.id);
 
     pool.query(
-        queries.markRead,[true, user_id],(err,result)=>{
+        queries.markRead,[true,id],(err,result)=>{
             if(err){
                 return res.status(400).send(err);
             }

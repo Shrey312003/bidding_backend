@@ -161,7 +161,7 @@ const makeBid = (req,res) =>{
                         return res.status(404).send(err);
                     }
                     
-                    res.status(202).send("Bid created");
+                    res.status(201).send("Bid created");
                 }
             )
             

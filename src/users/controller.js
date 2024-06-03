@@ -38,7 +38,7 @@ const addUsers = (req, res) => {
                 }
             })
             .then(() => {
-                res.status(200).send("User created successfully");
+                res.status(201).send("User created successfully");
             })
             .catch(err => {
                 if (err.message !== "Username already exists" && err.message !== "Email already exists") {
@@ -71,11 +71,11 @@ const loginUser = (req, res) => {
                     const token = jwt.sign(
                         { id: user.id, username: user.username, role: user.role},
                         process.env.JWT_SECRET,
-                        { expiresIn: '1h' } // Token expiration time
+                        { expiresIn: '5h' } // Token expiration time
                     );
 
                     // Send the token to the client
-                    res.json({ token,username });
+                    res.status(200).json({ token,username });
                 });
         })
         .catch(err => {
