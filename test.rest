@@ -1,0 +1,24 @@
+
+
+# POST http://localhost:8000/users/login
+# Content-Type: application/json
+
+# {
+#     "username":"shrey2",
+#     "password":"shrey123"
+# }
+
+# DELETE  http://localhost:8000/items/18
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzaHJleTIiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNzE2MDQzMywiZXhwIjoxNzE3MTY0MDMzfQ.WhjSZn2lFPoamvMeQDNgdmZ7CluMovTYFc4vZkKWNbw
+
+# PUT http://localhost:8000/items/18
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJzaHJleTIiLCJpYXQiOjE3MTcxNDQyNDMsImV4cCI6MTcxNzE0Nzg0M30.b6yk4j7L-Ck_AVOmr0WOCxnB8pDnLPSYuuiXwi_-xH4
+
+# {
+#     "name": "newbat",
+#     "description": "nasdf",
+#     "starting_price": 10,
+#     "image_url": "uploads",
+#     "end_time": "2024-06-30 12:00:00"
+# }
