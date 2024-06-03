@@ -126,7 +126,7 @@ bidding_backend/
 
 ### Items
 - **POST /items**: Create a new item for bidding.
-  -Request Headers:
+  - Request Headers:
     ```json
     {
         "Authentication" : "Bearer + token"
@@ -216,7 +216,7 @@ bidding_backend/
     }
 
 - **PUT /items/:id**: Update the item.
-  -Request Headers:
+  - Request Headers:
     ```json
     {
         "Authentication" : "Bearer + token"
